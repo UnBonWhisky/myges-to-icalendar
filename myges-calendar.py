@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+import os
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
 import json, time
 from geopy.geocoders import Nominatim
 from icalendar import Calendar
