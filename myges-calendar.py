@@ -16,7 +16,7 @@ password = data["password"]
 if username is None or password is None :
     set_identifiants()
 
-hash = check_hash()
+hash = check_hash(username, password)
 
 if (data["b64"] is None) or (hash != data["b64"]):
     save_base64("b64", hash)
