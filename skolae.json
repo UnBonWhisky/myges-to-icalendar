@@ -1,0 +1,16 @@
+{
+    "_exemple": {
+        "username": "pnom",
+        "password": "mot de passe myges",
+        "commentaire": "Mettez vos informations en dessous (là ou c'est actuellement marqué null)"
+    },
+    "username": null,
+    "password": null,
+    "b64": null,
+    "auth": {
+        "access_token": null,
+        "token_type": null,
+        "expires_in": 0,
+        "scope": null
+    }
+}
