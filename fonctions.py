@@ -7,7 +7,7 @@ data = json.load(file)
 def check_hash(username, password): # On check si le base64 des ID est toujours le bon par rapport à celui de notre username:password
     hash = bytes(f"{username}:{password}", encoding="utf-8")
     hash = base64.b64encode(hash).decode('utf-8')
-    return hash, username, password
+    return hash
 
 def set_identifiants(): # Si les identifiants n'ont pas été entré, on renvoie ici et on quitte le programme
     print("Entrez vos identifiants MyGES entre \"\" dans le fichier skolae.json\nUn exemple est affiché sous le nom de \"_exemple\".\nVous pouvez ouvrir ce fichier avec le bloc-notes ou notepad++.")
