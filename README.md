@@ -39,9 +39,11 @@ Il faudra également que vos identifiants soient entre guillemets et que vous aj
         "expires_in": 0,
         "scope": null
     },
-    "Campus1": "Adresse du campus 1",
-    "Campus2": "Adresse du campus 2",
-    "Campus3": "Adresse du campus 3"
+    "campus": {
+        "Campus1": "Adresse du campus 1",
+        "Campus2": "Adresse du campus 2",
+        "Campus3": "Adresse du campus 3"
+    }
 }
 ```
 
