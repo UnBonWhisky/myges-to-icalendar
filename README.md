@@ -21,8 +21,8 @@ Une fois ces paquets installés, vous devrez télécharger les 3 fichiers suivan
 - `myges-calendar.py`
 - `fonctions.py`
 
-Dans le fichier `skolae.json`, vous devrez modifier les variables où il est écrit `ICI` en rouge pour mettre votre identifiant et votre mot de passe MyGES.
-Il faudra que vos identifiants soient entre guillemets, comme dans l'`_exemple` :
+Dans le fichier `skolae.json`, vous devrez modifier les variables où il est écrit `ICI` en rouge pour mettre votre identifiant et votre mot de passe MyGES.  
+Il faudra également que vos identifiants soient entre guillemets et que vous ajoutiez vos campus, comme dans l'`_exemple` :
 ```json
 {
     "_exemple": {
@@ -38,7 +38,10 @@ Il faudra que vos identifiants soient entre guillemets, comme dans l'`_exemple` 
         "token_type": null,
         "expires_in": 0,
         "scope": null
-    }
+    },
+    "Campus1": "Adresse du campus 1",
+    "Campus2": "Adresse du campus 2",
+    "Campus3": "Adresse du campus 3"
 }
 ```
 
