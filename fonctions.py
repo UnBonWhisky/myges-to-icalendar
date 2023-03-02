@@ -83,6 +83,7 @@ def create_events(calendrier, cal):
                     description = f'Type de présence : {calendrier["result"][x]["modality"]}\nCampus : {calendrier["result"][x]["rooms"][0]["campus"]}\nSalle : {calendrier["result"][x]["rooms"][0]["name"]}\nAdresse : {AddressCampus}'
 
             elif calendrier["result"][x]["modality"] == "Distanciel":
+                AddressCampus = f"{calendrier['result'][x]['type']} à distance"
                 description = f'Type de présence : {calendrier["result"][x]["modality"]}'
         
         elif calendrier["result"][x]["type"] == "Examen" or calendrier["result"][x]["type"] == "Soutenance" :
@@ -110,8 +111,12 @@ def create_events(calendrier, cal):
                 description = f'Type de présence : Présentiel\nCampus : {campus_name}\nSalle{"s" if len(salles) > 1 else ""} : {", ".join(salles)}\nAdresse : {AddressCampus}'
             
             elif calendrier["result"][x]["modality"] != "" and calendrier["result"][x]["rooms"] is None :
-                AddressCampus = "En attente des informations"
-                description = "Informations indisponibles pour le moment"
+                if calendrier["result"][x]["modality"] == "Présentiel" :
+                    AddressCampus = "En attente des informations"
+                    description = "Informations indisponibles pour le moment"
+                else :
+                    AddressCampus = f"{calendrier['result'][x]['type']} à distance"
+                    description = f'Type de présence : {calendrier["result"][x]["modality"]}'
 
         else :
             continue
