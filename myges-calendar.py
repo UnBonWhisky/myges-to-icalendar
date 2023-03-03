@@ -5,9 +5,9 @@ import sys
 import json, time, base64
 from geopy.geocoders import Nominatim
 from icalendar import Calendar
-from fonctions import *
 
-sys.path.append('/root/myges-to-icalendar')
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+from fonctions import *
 
 file = open("skolae.json", 'r+', encoding="utf-8")
 data = json.load(file)
