@@ -1,3 +1,6 @@
+Ce repo ne sera pas mis à jour (malgré qu'il soit toujours fonctionnel).  
+Ce repo sera maintenu : https://github.com/UnBonWhisky/myges-icalendar-website
+
 # myges to icalendar
 
 Voici un script utilisant l'API de l'application mobile Skolae, qui est utilisée pour les écoles du réseau GES.
